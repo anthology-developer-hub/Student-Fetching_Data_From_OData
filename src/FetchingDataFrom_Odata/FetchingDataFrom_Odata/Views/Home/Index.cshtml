@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <style>
+        table, td, th {
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <br />
+    <h2>Enter Details </h2>
+ <table>
+    <form method="post" action="~/Home/Odata_Value">
+    
+        <tr>
+            <td><label for="username">Enter Username:</label></td>
+            <td><input style="height:20px" size="40" type="text" id="username" name="username" placeholder="Username" /></td>
+        </tr>
+    
+        <tr>
+            <td><label for="password">Enter Password:</label></td>
+            <td><input style="height:20px" size="40" type="text" id="password" name="password" placeholder="Password" /></td>
+        </tr>
+     
+        <tr>
+            <td><label for="odata">Enter Odata:</label></td>
+            <td><input style="height:60px" size="80" type="text" id="Values" name="Values" placeholder="OData Query" /></td>
+        </tr>
+    
+        <tr>
+            <td><button type="submit">Get OData Informantion</button></td>
+        </tr>
+        
+    </form>
+</table>
+
+</body>
+</html>
